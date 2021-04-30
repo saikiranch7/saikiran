@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class multiply {
+    public static void main(String[] args){
+        new multiply().takeInput();
+    }
+    void takeInput(){
+        Scanner scan= new Scanner(System.in);
+        int first = scan.nextInt();
+        int second = scan.nextInt();
+        int result = multiplyNum(first, second);
+        printResult(result);
+    }
+    int multiplyNum(int first, int second){
+        return first*second;
+    }
+    void printResult(int output){
+        System.out.println(output);
+    }
+    
+}
